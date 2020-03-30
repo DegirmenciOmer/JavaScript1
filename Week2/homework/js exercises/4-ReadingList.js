@@ -37,8 +37,7 @@ for(item of myBooks) {
 	if (item.finished === true) {
 		console.log("You already read " + item['title']+ "!");	
 	}
-	else {console.log("You still need to read " + item['title'] + "!");
-}	
+	else {console.log("You still need to read " + item['title'] + "!");}	
 }
 //If you haven't read it log a string like 
 //You still need to read "The Lord of the Rings"

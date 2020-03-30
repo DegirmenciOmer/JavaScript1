@@ -3,14 +3,15 @@
 //A TITLE(STRING), A SERVINGS(NUMBER), 
 //AND AN INGREDIENTS (ARRAY OF STRINGS) PROPERTY.
 
-const mySpecialRecipe = [{
-	mealname: "Vla",
-	serves :3,
-	ingredients: ["1 lt. milk", "200 gr. sugar", "1 banana", "20 gr. starch"]
-}]
+const mySpecialRecipe = {}
+
+mySpecialRecipe.mealname = "Vla",
+mySpecialRecipe.serves = 3,
+mySpecialRecipe.ingredients = ["1 lt. milk", "200 gr. sugar", "1 banana", "20 gr. starch"]
+
 
 //LOG EACH PROPERTY OUT SEPARATELY, USING A LOOP(FOR, WHILE OR DO/WHILE)
 
-for(item of mySpecialRecipe) {
-	console.log(item);
+for(const attr in mySpecialRecipe) {
+	console.log(attr);
 }
