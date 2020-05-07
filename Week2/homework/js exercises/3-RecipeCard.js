@@ -13,5 +13,5 @@ mySpecialRecipe.ingredients = ["1 lt. milk", "200 gr. sugar", "1 banana", "20 gr
 //LOG EACH PROPERTY OUT SEPARATELY, USING A LOOP(FOR, WHILE OR DO/WHILE)
 
 for(const attr in mySpecialRecipe) {
-	console.log(attr);
+	console.log(mySpecialRecipe[attr]);
 }

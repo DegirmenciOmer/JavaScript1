@@ -17,13 +17,24 @@ for (let i = 0; i < 5; i++) {
 
 // If there are already two instances of a drinkType 
 // then start with the next drink in the array.
-	if(i === 0 && 1) {
-		drinkTray.push(drinkTypes[0]);
-	}
-	else if (i === 2 && 3) {
-		drinkTray.push(drinkTypes[1]);
-	}
-	else {drinkTray.push(drinkTypes[2]);}
+	switch (i) {
+    case 0:
+        drinkTray.push(drinkTypes[0]);
+        break;
+    case 1:
+        drinkTray.push(drinkTypes[0]);
+        break;
+    case 2:
+    drinkTray.push(drinkTypes[1]);
+        break;
+    case 3:
+        drinkTray.push(drinkTypes[1]);
+        break;
+    case 4:
+            drinkTray.push(drinkTypes[2]);
+    break;                                       
+    }
+}
 // Your drinkTray should contain 2 cola, 
 // 2 lemonade and 1 water.
 // Log to the console: "Hey guys, I brought 
